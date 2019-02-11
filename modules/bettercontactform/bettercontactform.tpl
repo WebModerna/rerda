@@ -1,0 +1,1 @@
+{if $isEnabled == '1'}{$codeSnippet}{/if}

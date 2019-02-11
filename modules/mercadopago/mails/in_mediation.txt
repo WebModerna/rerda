@@ -1,0 +1,11 @@
+Hola {firstname} {lastname},
+
+Una mediación fue abierta de su pago para {shop_name} a la orden de compra {order_name}.
+
+Puede revisar su pedido y descargar la factura en el "Historial y Detalle de mis pedidos" de su cuenta haciendo clic en "Mi Cuenta" en nuestro sitio web.
+
+Si usted posee una cuenta de Invitado, puede seguir su pedido a través de este enlace: {guest_tracking_url}
+
+{shop_name} - {shop_url}
+
+{shop_url} desarrollado por PrestaShop&trade;

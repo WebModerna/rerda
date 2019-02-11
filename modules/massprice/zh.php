@@ -1,0 +1,36 @@
+<?php
+
+global $_MODULE;
+$_MODULE = array();
+$_MODULE['<{massprice}prestashop>massprice_a6fab1e3a3c3304799592c41d6253c20'] = '大规模价格更新';
+$_MODULE['<{massprice}prestashop>massprice_a0a422e8566cba3242b6737455c1216e'] = '大规模价格更新的类别 www.catalogo-onlinersi.net';
+$_MODULE['<{massprice}prestashop>massprice_37af51ac36d04d2f4054df050dd29e14'] = '新值';
+$_MODULE['<{massprice}prestashop>massprice_b2f40690858b404ed10e62bdf422c704'] = '金额';
+$_MODULE['<{massprice}prestashop>massprice_133ecd5df0196509fc37634c617b5e50'] = '不要更新组合，只更新基价';
+$_MODULE['<{massprice}prestashop>massprice_58165e728340d1fb20957f32b0d6334c'] = '更新基价和组合定价';
+$_MODULE['<{massprice}prestashop>massprice_e04f521224d6246450d16370fe433ce8'] = '更新组合，不更新基价';
+$_MODULE['<{massprice}prestashop>massprice_226dbc03fcace679974af7d964756dd5'] = '价格增量： \'。(float) $nbr。 \'，增量类型： \'。 $sy。 \'在\'。 $re.\'-\'。 $co。 \' 类别 id： \'。（字符串）Configuration::get(\'MASSPRICE_SKIP_CAT';
+$_MODULE['<{massprice}prestashop>massprice_f7e138182339ea11d69f1ae69b22c815'] = '新值 （不要使用百分比或金额）';
+$_MODULE['<{massprice}prestashop>massprice_37be07209f53a5d636d5c904ca9ae64c'] = '百分比';
+$_MODULE['<{massprice}prestashop>massprice_254f642527b45bc260048e30704edb39'] = '配置';
+$_MODULE['<{massprice}prestashop>massprice_5bec55f35bbffd348564516b0cc1264a'] = '性价比';
+$_MODULE['<{massprice}prestashop>massprice_96e02629807e802f1e9261becd12bc64'] = '百分比或金额增加/减少/新价格';
+$_MODULE['<{massprice}prestashop>massprice_5d9a49dbe6d88fae223172f36828092e'] = '增加或减少';
+$_MODULE['<{massprice}prestashop>massprice_20db01dbc95e380605a2de9443376504'] = '更新的类型';
+$_MODULE['<{massprice}prestashop>massprice_31cba6f3b4e5a4e16e43a57813cbe244'] = '最小价格范围:';
+$_MODULE['<{massprice}prestashop>massprice_931aff5c833ba7eaa860479a87d0dc5c'] = '要更新的最低价格范围。该模块更新基价大于此最低 (请保留空白，请跳过)';
+$_MODULE['<{massprice}prestashop>massprice_026990049d6ed552b2dbf5073aeac853'] = '最大价格范围';
+$_MODULE['<{massprice}prestashop>massprice_766a54e397832e9976a47b04a7654b62'] = '要更新的最大的价格范围。该模块更新基地的价格低于此最大值 (留空跳过)';
+$_MODULE['<{massprice}prestashop>massprice_f428982e8b9d2a7a8631bcd394539804'] = '更新产品组合吗？';
+$_MODULE['<{massprice}prestashop>massprice_3e50a5a83cdae15c1cb77faa8a567b93'] = '要包括的商店类别';
+$_MODULE['<{massprice}prestashop>massprice_74c2b5c2f91540c83414a3962a7703f3'] = '选择您想要更改价格在 selectec 类中的每个产品的类别';
+$_MODULE['<{massprice}prestashop>massprice_bb2a88ee038dcf4ee8c5d3c2c0c9932a'] = '更新价格';
+$_MODULE['<{massprice}prestashop>massprice_f4f70727dc34561dfde1a3c529b6205c'] = '设置';
+$_MODULE['<{massprice}prestashop>massprice_4f78ddf997d9f8fa1725ea0b5213adf5'] = '使用的最后一条规则：';
+$_MODULE['<{massprice}prestashop>massprice_26b17225b626fb9238849fd60eabdf60'] = '+';
+$_MODULE['<{massprice}prestashop>massprice_336d5ebc5436534e61d16e63ddfca327'] = '-';
+$_MODULE['<{massprice}prestashop>massprice_65cb384ae9122c62ef671e7bde5c3042'] = '新值 （不要使用百分比或金额）';
+$_MODULE['<{massprice}prestashop>massprice_06933067aafd48425d67bcb01bba5cb6'] = '更新';
+$_MODULE['<{massprice}prestashop>massprice_9887a4451812854f0f1b6f669a874307'] = '贡献';
+$_MODULE['<{massprice}prestashop>massprice_e8928d746f7cf273fa76aabf3f906216'] = '如果我们免费的模块和主题是对你有用，你可以捐作出贡献。气候与冰冻圈的链接和支持我们 ！';
+$_MODULE['<{massprice}prestashop>massprice_4ad5cd8425d9ac520903c1819517f0e1'] = '有关更多模块科技主题访问： www.catalogo-onlinersi.com.ar';

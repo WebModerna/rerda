@@ -1,0 +1,16 @@
+{
+  "name": "nosto/nostotagging",
+  "description": "Nosto Module for Prestashop",
+  "require": {
+    "nosto/php-sdk": "1.16.1"
+  },
+  "require-dev": {
+    "phing/phing": "2.*",
+    "phpmd/phpmd" : "@stable",
+    "squizlabs/php_codesniffer": "2.*",
+    "wimg/php-compatibility": "^7.1"
+  },
+  "config": {
+    "vendor-dir": "libs"
+  }
+}

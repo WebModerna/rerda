@@ -1,0 +1,13 @@
+Hola {firstname} {lastname},
+
+Orden Nº {order_name} - Pago en estado PENDIENTE
+
+El pedido {order_name} fue solicitado con éxito. Estamos aguardando el pago del ticket.
+
+Puede revisar su pedido y descargar la factura en el "Historial y Detalle de mis pedidos" de su cuenta haciendo clic en "Mi Cuenta" en nuestro sitio web.
+
+Si usted posee una cuenta de Invitado, puede seguir su pedido a través de este enlace: {guest_tracking_url}
+
+{shop_name} - {shop_url}
+
+{shop_url} desarrollado por PrestaShop&trade;

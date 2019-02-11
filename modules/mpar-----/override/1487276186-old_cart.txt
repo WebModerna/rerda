@@ -1,0 +1,174 @@
+<?php
+/**
+* Change carrier list
+*
+* @author    Kijam.com <info@kijam.com>
+* @copyright 2014 Kijam.com
+* @license   Comercial
+*/
+class Cart extends CartCore
+{
+    /*
+    * module: mpar
+    * date: 2017-02-03 11:10:10
+    * version: 3.1.10
+    */
+    public function getDeliveryOptionList(Country $default_country = null, $flush = false)
+    {
+        $result = CartCore::getDeliveryOptionList($default_country, $flush);
+        include_once(_PS_ROOT_DIR_.'/modules/mpar/mpar.php');
+        $cart = $this;
+        $mp = new Mpar();
+        $id_country = Country::getByIso(Mpar::MP_ISO_COUNTRY);
+        $address = new Address($this->id_address_delivery);
+        $delivery = false;
+        if (!Validate::isLoadedObject($address) || $id_country != $address->id_country || !$mp->active || Mpar::$mp_sandbox_active || !Mpar::$mp || !Mpar::$mp_shipping_active) {
+            foreach ($result as $id_address => $carrier_list_raw) {
+                foreach ($carrier_list_raw as $key => $carrier_list) {
+                    foreach ($carrier_list['carrier_list'] as $id_carrier => $carrier) {
+                        $car = &$result[$id_address];
+                        if (in_array($id_carrier, Mpar::$mp_shippings['mp_ps'])) {
+                            unset($car[$key]);
+                        }
+                    }
+                }
+            }
+            return $result;
+        }
+        $delivery = false;
+        if (!Validate::isLoadedObject($address)) {
+            $delivery = Context::getContext()->cookie->postcode;
+        } else {
+            $delivery = $address->postcode;
+        }
+        $delivery = preg_replace('/[^0-9]/', '', $delivery);
+        $products = $cart->getProducts();
+        $dim = $mp->getWebserviceShippingDim($products);
+        $fee = 100.0 / (100.0 - (float)Mpar::$mp_fee);
+        $params_mp = array(
+            'dimensions' => "{$dim['width']}x{$dim['height']}x{$dim['depth']},{$dim['weight']}",
+            'zip_code' => $delivery,
+            'item_price' => Tools::ps_round($cart->getOrderTotal(true, Cart::BOTH_WITHOUT_SHIPPING) * $fee, 2),
+            'free_method' => '',
+        );
+        if ($params_mp['item_price'] < 1.0) {
+            $params_mp['item_price'] = 1.0;
+        }
+        $currency = new Currency((int)$cart->id_currency);
+        $params_mp['item_price'] = Tools::ps_round($params_mp['item_price'] * $mp->getRate($currency->iso_code, Mpar::MP_CURRENCY_SHIPPING), 2);
+        $response = false;
+        if (Tools::strlen($delivery) > 2) {
+            $cache_id = 'get_shipping_price_'.md5(var_export($params_mp, true));
+            if ($response = Mpar::getCache($cache_id)) {
+                $mp->log('get_shipping_price: '.print_r($params_mp, true).' 
+                            -> from cache: '.$cache_id);
+            } else {
+                try {
+                    $response = Mpar::$mp->get_shipping_price($params_mp);
+                    Mpar::setCache($cache_id, $response);
+                    $mp->log('get_shipping_price[3-'.$cache_id.']: 
+                                '.print_r($params_mp, true).' 
+                                '.print_r($products, true).' 
+                                -> '.print_r($response, true));
+                } catch (Exception $e) {
+                    $mp->log('ERROR-getDeliveryOptionList-get_shipping_price: '.print_r($e, true));
+                    foreach ($result as $id_address => $carrier_list_raw) {
+                        foreach ($carrier_list_raw as $key => $carrier_list) {
+                            foreach ($carrier_list['carrier_list'] as $id_carrier => $carrier) {
+                                $car = &$result[$id_address];
+                                if (in_array($id_carrier, Mpar::$mp_shippings['mp_ps'])) {
+                                    unset($car[$key]);
+                                }
+                            }
+                        }
+                    }
+                    return $result;
+                }
+            }
+        }
+        $delay_days = array();
+        $carriers_founds = array();
+        $carriers_deleted = array();
+        $delays = array();
+        if ($response && isset($response['response']) && isset($response['response']['options'])) {
+            $shipping_options = $response['response']['options'];
+            $is_new_carrier = false;
+            foreach ($shipping_options as $shipping_option) {
+                if (isset(Mpar::$mp_shippings['mp_ps'][$shipping_option['shipping_method_id']])) {
+                    $carrier = new Carrier(Mpar::$mp_shippings['mp_ps'][$shipping_option['shipping_method_id']]);
+                    if (Validate::isLoadedObject($carrier) && !$carrier->deleted) {
+                        continue;
+                    }
+                    unset(Mpar::$mp_shippings['ps_mp'][Mpar::$mp_shippings['mp_ps'][$shipping_option['shipping_method_id']]]);
+                    unset(Mpar::$mp_shippings['mp_ps'][$shipping_option['shipping_method_id']]);
+                }
+                $id_country = Country::getByIso(Mpar::MP_ISO_COUNTRY);
+                $id_zone = array();
+                $id_zone[] = (int)Country::getIdZone($id_country);
+                $states = State::getStatesByIdCountry($id_country);
+                if ($states) {
+                    foreach ($states as $state) {
+                        if ((int)$state['id_zone'] > 0 && !in_array((int)$state['id_zone'], $id_zone)) {
+                            $id_zone[] = (int)$state['id_zone'];
+                        }
+                    }
+                }
+                $carrierConfig = array(
+                    'name' => $shipping_option['name'],
+                    'url' => '',
+                    'id_tax_rules_group' => 0,
+                    'deleted' => 0,
+                    'shipping_handling' => false,
+                    'range_behavior' => 0,
+                    'delay' => array('es' => 'Cálculo Dinámico', 'en' => 'Dynamic calculation'),
+                    'id_zone' => $id_zone,
+                    'is_module' => true,
+                    'shipping_external' => true,
+                    'external_module_name' => Mpar::MP_NAME,
+                    'need_range' => true,
+                    'active' => true
+                );
+                $id_carrier = Mpar::installExternalCarrier($carrierConfig);
+                if (!$id_carrier || $id_carrier < 1) {
+                    Mpar::log('Failed to create the carrier MercadoEnvios');
+                } else {
+                    Mpar::$mp_shippings['mp_ps'][$shipping_option['shipping_method_id']] = $id_carrier;
+                    Mpar::$mp_shippings['ps_mp'][$id_carrier] = $shipping_option['shipping_method_id'];
+                    Mpar::log('New Carrier['.$id_carrier.']: '.print_r($carrierConfig, true));
+                    $is_new_carrier = true;
+                }
+            }
+            if ($is_new_carrier) {
+                Mpar::refreshCarrierList(Mpar::$mp_shippings);
+            }
+            foreach ($shipping_options as $shipping_option) {
+                $delays[] = $shipping_option['shipping_method_id'];
+                $delay_days[$shipping_option['shipping_method_id']] = Tools::ps_round($shipping_option['speed']['shipping'] / 24, 0);
+            }
+        }
+        foreach ($result as $id_address => $carrier_list_raw) {
+            foreach ($carrier_list_raw as $key => $carrier_list) {
+                foreach ($carrier_list['carrier_list'] as $id_carrier => $carrier) {
+                    $car = &$result[$id_address];
+                    if (in_array($id_carrier, Mpar::$mp_shippings['mp_ps'])) {
+                        if (!in_array(Mpar::$mp_shippings['ps_mp'][$id_carrier], $delays)) {
+                            unset($car[$key]);
+                            $carriers_deleted[] = $id_carrier.' - '.Mpar::$mp_shippings['ps_mp'][$id_carrier];
+                        } else {
+                            foreach ($car[$key]['carrier_list'][$id_carrier]['instance']->delay as &$d) {
+                                $d = $delay_days[Mpar::$mp_shippings['ps_mp'][$id_carrier]].' - ';
+                                $d .= ($delay_days[Mpar::$mp_shippings['ps_mp'][$id_carrier]] + 1).' ';
+                                $d .= $mp->lang('days').'.';
+                                $carriers_founds[] = $id_carrier.' - '.Mpar::$mp_shippings['ps_mp'][$id_carrier];
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        $mp->log('delay_days: -> '.print_r($delay_days, true).' 
+            Founds: '.print_r($carriers_founds, true).' 
+            Deleted: '.print_r($carriers_deleted, true));
+        return $result;
+    }
+}

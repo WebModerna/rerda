@@ -1,0 +1,206 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Rokkitt:400,700);
+
+// Icomoon
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?2smco5');
+    src:    url('fonts/icomoon.eot?2smco5#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?2smco5') format('truetype'),
+        url('fonts/icomoon.woff?2smco5') format('woff'),
+        url('fonts/icomoon.svg?2smco5#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="im-icon-"], [class*=" im-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-magnifying-glass:before {
+    content: "\e900";
+}
+.icon-online-shopping-cart:before {
+    content: "\e901";
+}
+
+
+
+
+.text-uppercase { text-transform: uppercase;}
+
+body { font-family: $font-family; }
+
+.title-gral {
+	color: #2f2f2f;
+	font-family: $font-family;
+	font-weight: 700;
+	text-transform: uppercase;
+	@media (min-width: $screen-lg) { font-size: 48px; }
+}
+
+// HEADER
+#seguinos-social-top {
+    padding-top: 18px;
+    @media (min-width: $screen-lg) { float: right; }
+}
+
+.social-icon-link {
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 18px;
+    height: 32px;
+    line-height: 1.95;
+    text-align: center;
+    vertical-align: middle;
+    width: 32px;
+    &:hover,
+    &:focus { text-decoration: none; }
+}
+
+// Menu
+.sf-menu {
+    border-bottom: none;
+    background: none;
+    > li {
+        border-right: none;
+        > a {
+            border-bottom: none;
+            color: #000;
+            font-family: $font-family;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+    }
+}
+.sf-menu > li.sfHover > a,
+.sf-menu > li > a:hover,
+.sf-menu > li > a:focus,
+.sf-menu > li.sfHoverForce > a {
+    color: #000;
+}
+
+
+
+#homepage-slider {
+    margin-top: 20px;
+}
+
+#index {
+    #bg-slider {
+        @media (min-width: $screen-lg) {
+            background: #ddd;
+            height: 410px;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}
+
+.contact-form-box { background: none !important;}
+
+
+
+
+// Menu
+.sf-menu ul.submenu-container li li ul{
+    display:none!important;
+}
+
+.sf-menu > li { position: relative; }
+
+.sf-menu > li > ul > li {
+    float: none !important;
+    width: auto !important;
+    position: relative;
+    padding-right: 0 !important;
+    border-bottom: 1px solid #eee;
+}
+
+.sf-menu li li ul {
+    position: absolute !important;
+    left: 100% !important;
+    top: 0 !important;
+    background: #fff!important;
+    width: 100% !important;
+    padding: 0 !important;
+}
+
+.sf-menu > li > ul {
+    //width: auto !important;
+    padding: 0 !important;
+}
+
+.sf-menu > li > ul > li > a {
+    display: block;
+    padding: 7px 12px;
+}
+
+.sf-menu > li > a {
+    @media (max-width: $screen-xs-max) {
+        font-size: 14px !important;
+        padding: 12px 20px !important;
+    }
+}
+
+.sf-menu li li li a {
+    padding: 6px 10px !important;
+    display: block;
+}
+
+#category {
+    .subcategory-image { display: none; }
+    #subcategories ul li { height: auto; }
+}
+
+// BANNERS CATEGORIA
+.content_scene_cat {
+    border-top: none !important;
+    color: #333 !important;
+}
+body {
+        .content_scene_cat .content_scene_cat_bg {
+        background-color: transparent !important;
+        background-image: none !important;
+        padding: 18px 10px 10px 0 !important;
+        min-height: initial !important;
+    }
+}
+.content_scene_cat span.category-name { color: #333 !important; }
+
+.header_user_info {
+    a {
+        font-weight: 700;
+        line-height: 30px !important;
+        padding: 5px 25px !important;
+        @media (min-width: $screen-md) { font-size: 14px; }
+    }
+}
+
+#category {
+    #subcategories,
+    .cat-name { display: none; }
+}
+
+.store-image img {
+    width: auto !important;
+    margin: 0 auto;
+    display: block;
+}
+
+.table-bordered > thead > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > tfoot > tr > td {
+    border-left: none !important;
+    border-right: none !important;
+}

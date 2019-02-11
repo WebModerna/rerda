@@ -1,0 +1,31 @@
+Hola {firstname} {lastname},
+
+Su pedido nº {id_order} se ha recibido correctamente y será enviado tan pronto como recibamos la notificación del pago. Recuerde que ha solicitado efectuar el pago mediante PagoFacil.
+
+Por favor, realice el pago antes de la fecha de vencimiento de su cupon de pago:
+
+
+
+
+La cantidad total del pedido es de {total_paid}
+
+
+
+Puede revisar este pedido y descargar la factura desde la sección "Historial y detalles de sus pedidos" de su cuenta pulsando sobre "Mi cuenta" en nuestra página web.
+
+
+
+Gracias por comprar en {shop_name}.
+
+
+
+{shop_name} - {shop_url}
+
+
+
+
+
+{shop_url} está gestionada con PrestaShop™
+
+
+

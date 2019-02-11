@@ -1,0 +1,83 @@
+@import "compass";
+@import "theme_variables";
+#search_block_top {
+	padding-top: 15px;
+	#searchbox {
+		float: left;
+		width: 100%;
+	}
+	.btn.button-search {
+		background: $dark-background;
+		border: none;
+		color: #010101;
+		display: block;
+		padding: 7px 0 6px 0;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 0;
+		width: 50px;
+		span {
+			display: none;
+		}
+		&:before {
+			content: "\f002";
+			display: block;
+			font-family: $font-icon;
+			font-size: 22px;
+			width: 100%;
+			text-align: center;
+		}
+		&:hover {
+			color: $dark-background;
+			background: #010101;
+		}
+	}
+	#search_query_top {
+		display: inline;
+		padding: 13px 60px 13px 13px;
+		height: 45px;
+		background: #fff;
+		margin-right: 1px;
+	}
+}
+
+.ac_results {
+	background: $light-background;
+	border: 1px solid $base-border-color;
+	width: 271px;
+	margin-top: -1px;
+	li {
+		padding: 0 10px;
+		font-weight: normal;
+		color: #686666;
+		font-size: 13px;
+		line-height: 22px;
+		&.ac_odd {
+			background: $light-background;
+		}
+		&:hover, &.ac_over {
+			background: $base-box-bg;
+		}
+	}
+}
+
+form#searchbox {
+	position: relative;
+	label {
+		color: $base-text-color;
+	}
+	input#search_query_block {
+		margin-right:10px;
+		max-width:222px;
+		margin-bottom:10px;
+		display:inline-block;
+		float:left;
+	}
+	.button.button-small {
+		float:left;
+		i {
+			margin-right:0;
+		}
+	}
+}

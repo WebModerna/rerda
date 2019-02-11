@@ -1,0 +1,1094 @@
+----------------------------------
+DATE: 2017-06-15 08:15:38
+----------------------------------
+
+verifyMercadoPago-ME: cache mp_me_61ab88117c7cf00f2a91a3b26132534e -> Array
+(
+    [status] => 200
+    [response] => Array
+        (
+            [id] => 197641718
+            [nickname] => RERDARERDASA
+            [registration_date] => 2015-11-09T08:41:20.000-04:00
+            [first_name] => RERDA
+            [last_name] => RERDA SA
+            [country_id] => AR
+            [email] => mprerda@gmail.com
+            [identification] => Array
+                (
+                    [type] => Otro
+                    [number] => 30535195869
+                )
+
+            [address] => Array
+                (
+                    [state] => 
+                    [city] => 
+                    [address] => 
+                    [zip_code] => 
+                )
+
+            [phone] => Array
+                (
+                    [area_code] =>  
+                    [number] => 2614256567
+                    [extension] => 
+                    [verified] => 
+                )
+
+            [alternative_phone] => Array
+                (
+                    [area_code] => 
+                    [number] => 
+                    [extension] => 
+                )
+
+            [user_type] => normal
+            [tags] => Array
+                (
+                    [0] => normal
+                    [1] => user_info_verified
+                )
+
+            [logo] => 
+            [points] => 0
+            [site_id] => MLA
+            [permalink] => http://perfil.mercadolibre.com.ar/RERDARERDASA
+            [shipping_modes] => Array
+                (
+                    [0] => custom
+                    [1] => not_specified
+                    [2] => me2
+                )
+
+            [seller_experience] => ADVANCED
+            [bill_data] => Array
+                (
+                    [accept_credit_note] => 
+                )
+
+            [seller_reputation] => Array
+                (
+                    [level_id] => 
+                    [power_seller_status] => 
+                    [transactions] => Array
+                        (
+                            [period] => historic
+                            [total] => 0
+                            [completed] => 0
+                            [canceled] => 0
+                            [ratings] => Array
+                                (
+                                    [positive] => 0
+                                    [negative] => 0
+                                    [neutral] => 0
+                                )
+
+                        )
+
+                    [metrics] => Array
+                        (
+                            [sales] => Array
+                                (
+                                    [period] => 60 months
+                                    [completed] => 0
+                                )
+
+                            [claims] => Array
+                                (
+                                    [period] => 60 months
+                                    [rate] => 0
+                                )
+
+                            [delayed_handling_time] => Array
+                                (
+                                    [period] => 60 months
+                                    [rate] => 0
+                                )
+
+                        )
+
+                )
+
+            [buyer_reputation] => Array
+                (
+                    [canceled_transactions] => 0
+                    [transactions] => Array
+                        (
+                            [period] => historic
+                            [total] => 
+                            [completed] => 
+                            [canceled] => Array
+                                (
+                                    [total] => 
+                                    [paid] => 
+                                )
+
+                            [unrated] => Array
+                                (
+                                    [total] => 
+                                    [paid] => 
+                                )
+
+                            [not_yet_rated] => Array
+                                (
+                                    [total] => 
+                                    [paid] => 
+                                    [units] => 
+                                )
+
+                        )
+
+                    [tags] => Array
+                        (
+                        )
+
+                )
+
+            [status] => Array
+                (
+                    [site_status] => active
+                    [list] => Array
+                        (
+                            [allow] => 
+                            [codes] => Array
+                                (
+                                    [0] => address_pending
+                                    [1] => address_empty_city
+                                    [2] => address_empty_state
+                                )
+
+                            [immediate_payment] => Array
+                                (
+                                    [required] => 
+                                    [reasons] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [buy] => Array
+                        (
+                            [allow] => 
+                            [codes] => Array
+                                (
+                                    [0] => address_empty_state
+                                )
+
+                            [immediate_payment] => Array
+                                (
+                                    [required] => 
+                                    [reasons] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [sell] => Array
+                        (
+                            [allow] => 1
+                            [codes] => Array
+                                (
+                                )
+
+                            [immediate_payment] => Array
+                                (
+                                    [required] => 
+                                    [reasons] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [billing] => Array
+                        (
+                            [allow] => 
+                            [codes] => Array
+                                (
+                                    [0] => address_pending
+                                    [1] => address_empty_city
+                                    [2] => address_empty_state
+                                )
+
+                        )
+
+                    [mercadopago_tc_accepted] => 1
+                    [mercadopago_account_type] => personal
+                    [mercadoenvios] => not_accepted
+                    [shopping_cart] => Array
+                        (
+                            [buy] => 
+                            [sell] => 
+                        )
+
+                    [immediate_payment] => 
+                    [confirmed_email] => 
+                    [user_type] => simple_registration
+                    [required_action] => 
+                )
+
+            [company] => Array
+                (
+                    [corporate_name] => RERDA SA
+                    [brand_name] => RERDA
+                    [identification] => 30535195869
+                    [state_tax_id] => 
+                    [city_tax_id] => 
+                )
+
+            [credit] => Array
+                (
+                    [consumed] => 0
+                    [credit_level_id] => MLA5
+                )
+
+            [context] => Array
+                (
+                    [source] => mercadopago
+                    [flow] => 
+                    [device] => 
+                )
+
+        )
+
+)
+
+
+----------------------------------
+
+----------------------------------
+
+----------------------------------
+DATE: 2017-06-15 17:17:28
+----------------------------------
+
+verifyMercadoPago-ME: cache mp_me_61ab88117c7cf00f2a91a3b26132534e -> Array
+(
+    [status] => 200
+    [response] => Array
+        (
+            [id] => 197641718
+            [nickname] => RERDARERDASA
+            [registration_date] => 2015-11-09T08:41:20.000-04:00
+            [first_name] => RERDA
+            [last_name] => RERDA SA
+            [country_id] => AR
+            [email] => mprerda@gmail.com
+            [identification] => Array
+                (
+                    [type] => Otro
+                    [number] => 30535195869
+                )
+
+            [address] => Array
+                (
+                    [state] => 
+                    [city] => 
+                    [address] => 
+                    [zip_code] => 
+                )
+
+            [phone] => Array
+                (
+                    [area_code] =>  
+                    [number] => 2614256567
+                    [extension] => 
+                    [verified] => 
+                )
+
+            [alternative_phone] => Array
+                (
+                    [area_code] => 
+                    [number] => 
+                    [extension] => 
+                )
+
+            [user_type] => normal
+            [tags] => Array
+                (
+                    [0] => normal
+                    [1] => user_info_verified
+                )
+
+            [logo] => 
+            [points] => 0
+            [site_id] => MLA
+            [permalink] => http://perfil.mercadolibre.com.ar/RERDARERDASA
+            [shipping_modes] => Array
+                (
+                    [0] => custom
+                    [1] => not_specified
+                    [2] => me2
+                )
+
+            [seller_experience] => ADVANCED
+            [bill_data] => Array
+                (
+                    [accept_credit_note] => 
+                )
+
+            [seller_reputation] => Array
+                (
+                    [level_id] => 
+                    [power_seller_status] => 
+                    [transactions] => Array
+                        (
+                            [period] => historic
+                            [total] => 0
+                            [completed] => 0
+                            [canceled] => 0
+                            [ratings] => Array
+                                (
+                                    [positive] => 0
+                                    [negative] => 0
+                                    [neutral] => 0
+                                )
+
+                        )
+
+                    [metrics] => Array
+                        (
+                            [sales] => Array
+                                (
+                                    [period] => 60 months
+                                    [completed] => 0
+                                )
+
+                            [claims] => Array
+                                (
+                                    [period] => 60 months
+                                    [rate] => 0
+                                )
+
+                            [delayed_handling_time] => Array
+                                (
+                                    [period] => 60 months
+                                    [rate] => 0
+                                )
+
+                        )
+
+                )
+
+            [buyer_reputation] => Array
+                (
+                    [canceled_transactions] => 0
+                    [transactions] => Array
+                        (
+                            [period] => historic
+                            [total] => 
+                            [completed] => 
+                            [canceled] => Array
+                                (
+                                    [total] => 
+                                    [paid] => 
+                                )
+
+                            [unrated] => Array
+                                (
+                                    [total] => 
+                                    [paid] => 
+                                )
+
+                            [not_yet_rated] => Array
+                                (
+                                    [total] => 
+                                    [paid] => 
+                                    [units] => 
+                                )
+
+                        )
+
+                    [tags] => Array
+                        (
+                        )
+
+                )
+
+            [status] => Array
+                (
+                    [site_status] => active
+                    [list] => Array
+                        (
+                            [allow] => 
+                            [codes] => Array
+                                (
+                                    [0] => address_pending
+                                    [1] => address_empty_city
+                                    [2] => address_empty_state
+                                )
+
+                            [immediate_payment] => Array
+                                (
+                                    [required] => 
+                                    [reasons] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [buy] => Array
+                        (
+                            [allow] => 
+                            [codes] => Array
+                                (
+                                    [0] => address_empty_state
+                                )
+
+                            [immediate_payment] => Array
+                                (
+                                    [required] => 
+                                    [reasons] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [sell] => Array
+                        (
+                            [allow] => 1
+                            [codes] => Array
+                                (
+                                )
+
+                            [immediate_payment] => Array
+                                (
+                                    [required] => 
+                                    [reasons] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [billing] => Array
+                        (
+                            [allow] => 
+                            [codes] => Array
+                                (
+                                    [0] => address_pending
+                                    [1] => address_empty_city
+                                    [2] => address_empty_state
+                                )
+
+                        )
+
+                    [mercadopago_tc_accepted] => 1
+                    [mercadopago_account_type] => personal
+                    [mercadoenvios] => not_accepted
+                    [shopping_cart] => Array
+                        (
+                            [buy] => 
+                            [sell] => 
+                        )
+
+                    [immediate_payment] => 
+                    [confirmed_email] => 
+                    [user_type] => simple_registration
+                    [required_action] => 
+                )
+
+            [company] => Array
+                (
+                    [corporate_name] => RERDA SA
+                    [brand_name] => RERDA
+                    [identification] => 30535195869
+                    [state_tax_id] => 
+                    [city_tax_id] => 
+                )
+
+            [credit] => Array
+                (
+                    [consumed] => 0
+                    [credit_level_id] => MLA5
+                )
+
+            [context] => Array
+                (
+                    [source] => mercadopago
+                    [flow] => 
+                    [device] => 
+                )
+
+        )
+
+)
+
+
+----------------------------------
+
+----------------------------------
+
+----------------------------------
+DATE: 2017-06-15 17:17:29
+----------------------------------
+
+verifyMercadoPago: -> from cache: mp_verify_61ab88117c7cf00f2a91a3b26132534e
+
+----------------------------------
+
+----------------------------------
+
+----------------------------------
+DATE: 2017-06-15 17:17:29
+----------------------------------
+
+verifyMercadoPago: -> from cache: mp_verify_61ab88117c7cf00f2a91a3b26132534e
+
+----------------------------------
+
+----------------------------------
+
+----------------------------------
+DATE: 2017-06-15 17:17:30
+----------------------------------
+
+verifyMercadoPago-ME: cache mp_me_61ab88117c7cf00f2a91a3b26132534e -> Array
+(
+    [status] => 200
+    [response] => Array
+        (
+            [id] => 197641718
+            [nickname] => RERDARERDASA
+            [registration_date] => 2015-11-09T08:41:20.000-04:00
+            [first_name] => RERDA
+            [last_name] => RERDA SA
+            [country_id] => AR
+            [email] => mprerda@gmail.com
+            [identification] => Array
+                (
+                    [type] => Otro
+                    [number] => 30535195869
+                )
+
+            [address] => Array
+                (
+                    [state] => 
+                    [city] => 
+                    [address] => 
+                    [zip_code] => 
+                )
+
+            [phone] => Array
+                (
+                    [area_code] =>  
+                    [number] => 2614256567
+                    [extension] => 
+                    [verified] => 
+                )
+
+            [alternative_phone] => Array
+                (
+                    [area_code] => 
+                    [number] => 
+                    [extension] => 
+                )
+
+            [user_type] => normal
+            [tags] => Array
+                (
+                    [0] => normal
+                    [1] => user_info_verified
+                )
+
+            [logo] => 
+            [points] => 0
+            [site_id] => MLA
+            [permalink] => http://perfil.mercadolibre.com.ar/RERDARERDASA
+            [shipping_modes] => Array
+                (
+                    [0] => custom
+                    [1] => not_specified
+                    [2] => me2
+                )
+
+            [seller_experience] => ADVANCED
+            [bill_data] => Array
+                (
+                    [accept_credit_note] => 
+                )
+
+            [seller_reputation] => Array
+                (
+                    [level_id] => 
+                    [power_seller_status] => 
+                    [transactions] => Array
+                        (
+                            [period] => historic
+                            [total] => 0
+                            [completed] => 0
+                            [canceled] => 0
+                            [ratings] => Array
+                                (
+                                    [positive] => 0
+                                    [negative] => 0
+                                    [neutral] => 0
+                                )
+
+                        )
+
+                    [metrics] => Array
+                        (
+                            [sales] => Array
+                                (
+                                    [period] => 60 months
+                                    [completed] => 0
+                                )
+
+                            [claims] => Array
+                                (
+                                    [period] => 60 months
+                                    [rate] => 0
+                                )
+
+                            [delayed_handling_time] => Array
+                                (
+                                    [period] => 60 months
+                                    [rate] => 0
+                                )
+
+                        )
+
+                )
+
+            [buyer_reputation] => Array
+                (
+                    [canceled_transactions] => 0
+                    [transactions] => Array
+                        (
+                            [period] => historic
+                            [total] => 
+                            [completed] => 
+                            [canceled] => Array
+                                (
+                                    [total] => 
+                                    [paid] => 
+                                )
+
+                            [unrated] => Array
+                                (
+                                    [total] => 
+                                    [paid] => 
+                                )
+
+                            [not_yet_rated] => Array
+                                (
+                                    [total] => 
+                                    [paid] => 
+                                    [units] => 
+                                )
+
+                        )
+
+                    [tags] => Array
+                        (
+                        )
+
+                )
+
+            [status] => Array
+                (
+                    [site_status] => active
+                    [list] => Array
+                        (
+                            [allow] => 
+                            [codes] => Array
+                                (
+                                    [0] => address_pending
+                                    [1] => address_empty_city
+                                    [2] => address_empty_state
+                                )
+
+                            [immediate_payment] => Array
+                                (
+                                    [required] => 
+                                    [reasons] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [buy] => Array
+                        (
+                            [allow] => 
+                            [codes] => Array
+                                (
+                                    [0] => address_empty_state
+                                )
+
+                            [immediate_payment] => Array
+                                (
+                                    [required] => 
+                                    [reasons] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [sell] => Array
+                        (
+                            [allow] => 1
+                            [codes] => Array
+                                (
+                                )
+
+                            [immediate_payment] => Array
+                                (
+                                    [required] => 
+                                    [reasons] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [billing] => Array
+                        (
+                            [allow] => 
+                            [codes] => Array
+                                (
+                                    [0] => address_pending
+                                    [1] => address_empty_city
+                                    [2] => address_empty_state
+                                )
+
+                        )
+
+                    [mercadopago_tc_accepted] => 1
+                    [mercadopago_account_type] => personal
+                    [mercadoenvios] => not_accepted
+                    [shopping_cart] => Array
+                        (
+                            [buy] => 
+                            [sell] => 
+                        )
+
+                    [immediate_payment] => 
+                    [confirmed_email] => 
+                    [user_type] => simple_registration
+                    [required_action] => 
+                )
+
+            [company] => Array
+                (
+                    [corporate_name] => RERDA SA
+                    [brand_name] => RERDA
+                    [identification] => 30535195869
+                    [state_tax_id] => 
+                    [city_tax_id] => 
+                )
+
+            [credit] => Array
+                (
+                    [consumed] => 0
+                    [credit_level_id] => MLA5
+                )
+
+            [context] => Array
+                (
+                    [source] => mercadopago
+                    [flow] => 
+                    [device] => 
+                )
+
+        )
+
+)
+
+
+----------------------------------
+
+----------------------------------
+
+----------------------------------
+DATE: 2017-06-15 17:17:30
+----------------------------------
+
+verifyMercadoPago-ME: cache mp_me_61ab88117c7cf00f2a91a3b26132534e -> Array
+(
+    [status] => 200
+    [response] => Array
+        (
+            [id] => 197641718
+            [nickname] => RERDARERDASA
+            [registration_date] => 2015-11-09T08:41:20.000-04:00
+            [first_name] => RERDA
+            [last_name] => RERDA SA
+            [country_id] => AR
+            [email] => mprerda@gmail.com
+            [identification] => Array
+                (
+                    [type] => Otro
+                    [number] => 30535195869
+                )
+
+            [address] => Array
+                (
+                    [state] => 
+                    [city] => 
+                    [address] => 
+                    [zip_code] => 
+                )
+
+            [phone] => Array
+                (
+                    [area_code] =>  
+                    [number] => 2614256567
+                    [extension] => 
+                    [verified] => 
+                )
+
+            [alternative_phone] => Array
+                (
+                    [area_code] => 
+                    [number] => 
+                    [extension] => 
+                )
+
+            [user_type] => normal
+            [tags] => Array
+                (
+                    [0] => normal
+                    [1] => user_info_verified
+                )
+
+            [logo] => 
+            [points] => 0
+            [site_id] => MLA
+            [permalink] => http://perfil.mercadolibre.com.ar/RERDARERDASA
+            [shipping_modes] => Array
+                (
+                    [0] => custom
+                    [1] => not_specified
+                    [2] => me2
+                )
+
+            [seller_experience] => ADVANCED
+            [bill_data] => Array
+                (
+                    [accept_credit_note] => 
+                )
+
+            [seller_reputation] => Array
+                (
+                    [level_id] => 
+                    [power_seller_status] => 
+                    [transactions] => Array
+                        (
+                            [period] => historic
+                            [total] => 0
+                            [completed] => 0
+                            [canceled] => 0
+                            [ratings] => Array
+                                (
+                                    [positive] => 0
+                                    [negative] => 0
+                                    [neutral] => 0
+                                )
+
+                        )
+
+                    [metrics] => Array
+                        (
+                            [sales] => Array
+                                (
+                                    [period] => 60 months
+                                    [completed] => 0
+                                )
+
+                            [claims] => Array
+                                (
+                                    [period] => 60 months
+                                    [rate] => 0
+                                )
+
+                            [delayed_handling_time] => Array
+                                (
+                                    [period] => 60 months
+                                    [rate] => 0
+                                )
+
+                        )
+
+                )
+
+            [buyer_reputation] => Array
+                (
+                    [canceled_transactions] => 0
+                    [transactions] => Array
+                        (
+                            [period] => historic
+                            [total] => 
+                            [completed] => 
+                            [canceled] => Array
+                                (
+                                    [total] => 
+                                    [paid] => 
+                                )
+
+                            [unrated] => Array
+                                (
+                                    [total] => 
+                                    [paid] => 
+                                )
+
+                            [not_yet_rated] => Array
+                                (
+                                    [total] => 
+                                    [paid] => 
+                                    [units] => 
+                                )
+
+                        )
+
+                    [tags] => Array
+                        (
+                        )
+
+                )
+
+            [status] => Array
+                (
+                    [site_status] => active
+                    [list] => Array
+                        (
+                            [allow] => 
+                            [codes] => Array
+                                (
+                                    [0] => address_pending
+                                    [1] => address_empty_city
+                                    [2] => address_empty_state
+                                )
+
+                            [immediate_payment] => Array
+                                (
+                                    [required] => 
+                                    [reasons] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [buy] => Array
+                        (
+                            [allow] => 
+                            [codes] => Array
+                                (
+                                    [0] => address_empty_state
+                                )
+
+                            [immediate_payment] => Array
+                                (
+                                    [required] => 
+                                    [reasons] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [sell] => Array
+                        (
+                            [allow] => 1
+                            [codes] => Array
+                                (
+                                )
+
+                            [immediate_payment] => Array
+                                (
+                                    [required] => 
+                                    [reasons] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [billing] => Array
+                        (
+                            [allow] => 
+                            [codes] => Array
+                                (
+                                    [0] => address_pending
+                                    [1] => address_empty_city
+                                    [2] => address_empty_state
+                                )
+
+                        )
+
+                    [mercadopago_tc_accepted] => 1
+                    [mercadopago_account_type] => personal
+                    [mercadoenvios] => not_accepted
+                    [shopping_cart] => Array
+                        (
+                            [buy] => 
+                            [sell] => 
+                        )
+
+                    [immediate_payment] => 
+                    [confirmed_email] => 
+                    [user_type] => simple_registration
+                    [required_action] => 
+                )
+
+            [company] => Array
+                (
+                    [corporate_name] => RERDA SA
+                    [brand_name] => RERDA
+                    [identification] => 30535195869
+                    [state_tax_id] => 
+                    [city_tax_id] => 
+                )
+
+            [credit] => Array
+                (
+                    [consumed] => 0
+                    [credit_level_id] => MLA5
+                )
+
+            [context] => Array
+                (
+                    [source] => mercadopago
+                    [flow] => 
+                    [device] => 
+                )
+
+        )
+
+)
+
+
+----------------------------------
+
+----------------------------------
+
+----------------------------------
+DATE: 2017-06-15 17:17:31
+----------------------------------
+
+verifyMercadoPago: -> from cache: mp_verify_61ab88117c7cf00f2a91a3b26132534e
+
+----------------------------------
+
+----------------------------------
+

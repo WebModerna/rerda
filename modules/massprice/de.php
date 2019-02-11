@@ -1,0 +1,36 @@
+<?php
+
+global $_MODULE;
+$_MODULE = array();
+$_MODULE['<{massprice}prestashop>massprice_a6fab1e3a3c3304799592c41d6253c20'] = 'Masse Preis update';
+$_MODULE['<{massprice}prestashop>massprice_a0a422e8566cba3242b6737455c1216e'] = 'Masse Preisaktualisierung durch Kategorie-www.catalogo-onlinersi.net';
+$_MODULE['<{massprice}prestashop>massprice_37af51ac36d04d2f4054df050dd29e14'] = 'Neuen Wert';
+$_MODULE['<{massprice}prestashop>massprice_b2f40690858b404ed10e62bdf422c704'] = 'Menge';
+$_MODULE['<{massprice}prestashop>massprice_133ecd5df0196509fc37634c617b5e50'] = 'Dont Update Kombinationen, nur Update Grundpreis';
+$_MODULE['<{massprice}prestashop>massprice_58165e728340d1fb20957f32b0d6334c'] = 'Basispreis und Kombination Preis zu aktualisieren';
+$_MODULE['<{massprice}prestashop>massprice_e04f521224d6246450d16370fe433ce8'] = 'Aktualisieren Sie Kombinationen zu, aktualisieren Sie nicht Grundpreis';
+$_MODULE['<{massprice}prestashop>massprice_226dbc03fcace679974af7d964756dd5'] = 'Preis Schrittweite:\'.(Float) $Nbr.\', Art der Schrittweite:\'. $Sy. \'in\'. $re. \'-\'. $co.\' auf Kategorien-ID:\'.(String)Configuration::Get(\'MASSPRICE_SKIP_CAT';
+$_MODULE['<{massprice}prestashop>massprice_f7e138182339ea11d69f1ae69b22c815'] = 'Neuen Wert (verwenden Sie nicht der Prozentsatz oder Betrag)';
+$_MODULE['<{massprice}prestashop>massprice_37be07209f53a5d636d5c904ca9ae64c'] = 'Prozentsatz';
+$_MODULE['<{massprice}prestashop>massprice_254f642527b45bc260048e30704edb39'] = 'Konfiguration';
+$_MODULE['<{massprice}prestashop>massprice_5bec55f35bbffd348564516b0cc1264a'] = 'Preis-Wert';
+$_MODULE['<{massprice}prestashop>massprice_96e02629807e802f1e9261becd12bc64'] = 'Prozentsatz oder Betrag zur Zunahme/Abnahme/neuer Preis';
+$_MODULE['<{massprice}prestashop>massprice_5d9a49dbe6d88fae223172f36828092e'] = 'Erhöhen oder verringern';
+$_MODULE['<{massprice}prestashop>massprice_20db01dbc95e380605a2de9443376504'] = 'Art der Aktualisierung';
+$_MODULE['<{massprice}prestashop>massprice_31cba6f3b4e5a4e16e43a57813cbe244'] = 'Min-Preisspanne';
+$_MODULE['<{massprice}prestashop>massprice_931aff5c833ba7eaa860479a87d0dc5c'] = 'Die Preisspanne für die Minimun zu aktualisieren. Das Modul aktualisiert Grundpreise, die sind größer als dieses Minimum (leer lassen, überspringen)';
+$_MODULE['<{massprice}prestashop>massprice_026990049d6ed552b2dbf5073aeac853'] = 'Max Preis range';
+$_MODULE['<{massprice}prestashop>massprice_766a54e397832e9976a47b04a7654b62'] = 'Die Preisspanne für die Maximun zu aktualisieren. Das Modul aktualisiert Grundpreise, die kleiner als dieser Maximalwert (überspringen leer lassen)';
+$_MODULE['<{massprice}prestashop>massprice_f428982e8b9d2a7a8631bcd394539804'] = 'Aktualisieren Produktkombinationen zu?';
+$_MODULE['<{massprice}prestashop>massprice_3e50a5a83cdae15c1cb77faa8a567b93'] = 'Shop-Kategorie gehören';
+$_MODULE['<{massprice}prestashop>massprice_74c2b5c2f91540c83414a3962a7703f3'] = 'Wählen Sie die Kategorien Preis für jedes Produkt in Systemstrukturgruppen Kategorien ändern möchten';
+$_MODULE['<{massprice}prestashop>massprice_bb2a88ee038dcf4ee8c5d3c2c0c9932a'] = 'Preise aktualisieren';
+$_MODULE['<{massprice}prestashop>massprice_f4f70727dc34561dfde1a3c529b6205c'] = 'Einstellungen';
+$_MODULE['<{massprice}prestashop>massprice_4f78ddf997d9f8fa1725ea0b5213adf5'] = 'Letzte Regel verwendet:';
+$_MODULE['<{massprice}prestashop>massprice_26b17225b626fb9238849fd60eabdf60'] = '+';
+$_MODULE['<{massprice}prestashop>massprice_336d5ebc5436534e61d16e63ddfca327'] = '-';
+$_MODULE['<{massprice}prestashop>massprice_65cb384ae9122c62ef671e7bde5c3042'] = 'Neuen Wert (verwenden Sie nicht der Prozentsatz oder Betrag)';
+$_MODULE['<{massprice}prestashop>massprice_06933067aafd48425d67bcb01bba5cb6'] = 'Update';
+$_MODULE['<{massprice}prestashop>massprice_9887a4451812854f0f1b6f669a874307'] = 'Beitragen';
+$_MODULE['<{massprice}prestashop>massprice_e8928d746f7cf273fa76aabf3f906216'] = 'Sie können mit einer Spende dazu beitragen, wenn unsere kostenlose Module und Themen für Sie nützlich sind. Klicken Sie auf den Link und unterstützen Sie uns!';
+$_MODULE['<{massprice}prestashop>massprice_4ad5cd8425d9ac520903c1819517f0e1'] = 'Weitere Module & Themen finden Sie auf: www.catalogo-onlinersi.com.ar';

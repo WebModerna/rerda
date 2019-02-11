@@ -1,0 +1,13 @@
+Hola {firstname} {lastname},
+
+Orden de Compra {order_name} - Pago en análisis. 
+
+La Orden de Compra {order_name} se ha procesado correctamente. En menos de 2 días se le notificará por correo electrónico si fue acreditado o si necesitamos más información.
+
+Puede revisar su pedido y descargar la factura en el "Historial y Detalle de mis pedidos" de su cuenta haciendo clic en "Mi Cuenta" en nuestro sitio web.
+
+Si usted posee una cuenta de Invitado, puede seguir su pedido a través de este enlace: {guest_tracking_url}
+
+{shop_name} - {shop_url}
+
+{shop_url} desarrollado por PrestaShop&trade;
