@@ -35,7 +35,7 @@ En el campo vacío, ingresamos nuestra página web anteponiendo el http://, es d
 
 
 <p>{l s='Conocé nuestros servicios en:' mod='employeealert'} <a href="http://help2presta.com" target="_blank">http://help2presta.com</a></p>
-<p><a href="http://help2presta.com/12-servicios" target="_blank"><img src="http://help2presta.com/img/bannerlargo.jpg" width="100%" /></a></p>
-
+<!-- <p><a href="http://help2presta.com/12-servicios" target="_blank"><img src="http://help2presta.com/img/bannerlargo.jpg" width="100%" /></a></p> -->
+<p><a href="https://webmoderna.com.ar" target="_blank" style="background:#312720; display:inline-block; padding:4px;"><img src="https://webmoderna.com.ar/wp-content/themes/webmoderna/img/logo_200w.png" title="Mejorado por WebModerna" /></a></p>
 
 </div>
